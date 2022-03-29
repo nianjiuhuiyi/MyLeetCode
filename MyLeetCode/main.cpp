@@ -19,8 +19,32 @@ bool func693() {
 }
 
 int func2024() {
-	std::string answerKey = "FFFTTFTTFT";
-	int k = 3;
+	std::string answerKey = "TTFTTFTT";
+	int k = 1;
+
+	unsigned max_t = 0;
+	for (char c : answerKey) {
+		if (c == 'T') {
+			++max_t;
+		}
+		else {
+			if (k != 0) {
+				++max_t;
+				--k;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+	//std::string answerKey = "FFFTTFTTFT";
+	//int k = 3;
+
 	Solution2024 solution;
 	int out = solution.maxConsecutiveAnswers(answerKey, k);
 	return out;
