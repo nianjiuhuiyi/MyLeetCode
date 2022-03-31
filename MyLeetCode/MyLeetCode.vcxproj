@@ -127,11 +127,13 @@
     <ClCompile Include="Solution2024.cpp" />
     <ClCompile Include="Solution463.cpp" />
     <ClCompile Include="Solution693.cpp" />
+    <ClCompile Include="Solution728.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution2024.h" />
     <ClInclude Include="Solution463.h" />
     <ClInclude Include="Solution693.h" />
+    <ClInclude Include="Solution728.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

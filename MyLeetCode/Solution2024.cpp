@@ -1,5 +1,4 @@
 #include "Solution2024.h"
-#include <iostream>
 
 int Solution2024::maxConsecutiveAnswers(std::string answerKey, int k) {
 	

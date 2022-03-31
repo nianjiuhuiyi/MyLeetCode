@@ -2,6 +2,7 @@
 #include "Solution463.h"
 #include "Solution693.h"
 #include "Solution2024.h"
+#include "Solution728.h"
 
 
 int func463() {
@@ -27,14 +28,24 @@ int func2024() {
 	return out;
 }
 
+std::vector<int> func728() {
+	Solution728 solution;
+	std::vector<int> result = solution.selfDividingNumbers(47, 85);
+	return result;
+}
+
 int main(int argc, char** argv) {
 	//int out = func463();
 	//bool out = func693();
+	//int out = func2024();
+	std::vector<int> out = func728();
+	for (auto k : out) {
+		std::cout << k << std::endl;
+	}
+	
 
-	int out = func2024();
 
-
-	std::cout << out << std::endl;
+	//std::cout << out << std::endl;
 	system("pause");
 	return 0;
 }
