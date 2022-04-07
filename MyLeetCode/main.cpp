@@ -3,6 +3,7 @@
 #include "Solution693.h"
 #include "Solution2024.h"
 #include "Solution728.h"
+#include "Solution796.h"
 
 
 int func463() {
@@ -34,18 +35,22 @@ std::vector<int> func728() {
 	return result;
 }
 
+bool func796() {
+	std::string a("abcde"), b("cdeab");
+	Solution796 solution;
+	bool out = solution.rotateString(a, b);
+	return out;
+}
+
 int main(int argc, char** argv) {
 	//int out = func463();
 	//bool out = func693();
 	//int out = func2024();
-	std::vector<int> out = func728();
-	for (auto k : out) {
-		std::cout << k << std::endl;
-	}
+	//std::vector<int> out = func728();
 	
+	bool out = func796();
 
-
-	//std::cout << out << std::endl;
+	std::cout << out << std::endl;
 	system("pause");
 	return 0;
 }

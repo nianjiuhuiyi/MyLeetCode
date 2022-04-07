@@ -30,6 +30,9 @@
     <ClCompile Include="Solution728.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Solution796.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution463.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Solution728.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution796.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
