@@ -4,6 +4,7 @@
 #include "Solution2024.h"
 #include "Solution728.h"
 #include "Solution796.h"
+#include "Solution806.h"
 
 
 int func463() {
@@ -42,15 +43,28 @@ bool func796() {
 	return out;
 }
 
+std::vector<int> func806() {
+	std::vector<int> widths = { 4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
+	std::string s = "bbbcccdddaaa";
+	Solution806 solution;
+	std::vector<int> out = solution.numberOfLines(widths, s);
+	return out;
+}
+
 int main(int argc, char** argv) {
 	//int out = func463();
 	//bool out = func693();
 	//int out = func2024();
 	//std::vector<int> out = func728();
-	
-	bool out = func796();
+	//bool out = func796();
 
-	std::cout << out << std::endl;
+	std::vector<int> out = func806();
+	
+	
+	
+
+	std::cout << out[0] << std::endl;
+	std::cout << out.at(1) << std::endl;
 	system("pause");
 	return 0;
 }
