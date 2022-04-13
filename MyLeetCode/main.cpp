@@ -5,6 +5,7 @@
 #include "Solution728.h"
 #include "Solution796.h"
 #include "Solution806.h"
+#include "Solution783.h"
 
 
 int func463() {
@@ -51,20 +52,25 @@ std::vector<int> func806() {
 	return out;
 }
 
+void func783() {
+	RandomizedSet *obj = new RandomizedSet();
+	obj->insert(1);
+	obj->insert(2);
+	std::cout << obj->getRandom() << std::endl;
+}
+
 int main(int argc, char** argv) {
 	//int out = func463();
 	//bool out = func693();
 	//int out = func2024();
 	//std::vector<int> out = func728();
 	//bool out = func796();
+	//std::vector<int> out = func806();
+	
+	func783();
+	
 
-	std::vector<int> out = func806();
-	
-	
-	
-
-	std::cout << out[0] << std::endl;
-	std::cout << out.at(1) << std::endl;
+	//std::cout << out.at(1) << std::endl;
 	system("pause");
 	return 0;
 }
