@@ -127,6 +127,7 @@
     <ClCompile Include="Solution2024.cpp" />
     <ClCompile Include="Solution463.cpp" />
     <ClCompile Include="Solution693.cpp" />
+    <ClCompile Include="Solution713.cpp" />
     <ClCompile Include="Solution728.cpp" />
     <ClCompile Include="Solution783.cpp" />
     <ClCompile Include="Solution796.cpp" />
@@ -136,6 +137,7 @@
     <ClInclude Include="Solution2024.h" />
     <ClInclude Include="Solution463.h" />
     <ClInclude Include="Solution693.h" />
+    <ClInclude Include="Solution713.h" />
     <ClInclude Include="Solution728.h" />
     <ClInclude Include="Solution783.h" />
     <ClInclude Include="Solution796.h" />

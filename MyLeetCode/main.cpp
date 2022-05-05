@@ -6,6 +6,7 @@
 #include "Solution796.h"
 #include "Solution806.h"
 #include "Solution783.h"
+#include "Solution713.h"
 
 
 int func463() {
@@ -57,6 +58,18 @@ void func783() {
 	obj->insert(1);
 	obj->insert(2);
 	std::cout << obj->getRandom() << std::endl;
+	delete obj;
+}
+
+int func713() {
+	// 算法应该是没什么问题了，但是因为是循环，算是暴力破解吧，，那种超长的全是1的字符串，时间超出限制了
+	//std::vector<int> nums = {10, 5, 2, 6};
+	std::vector<int> nums = {1,1,1};
+	int k = 2;
+	Solution713 solution;
+	int out = solution.numSubarrayProductLessThanK(nums, k);
+
+	return out;
 }
 
 int main(int argc, char** argv) {
@@ -66,9 +79,10 @@ int main(int argc, char** argv) {
 	//std::vector<int> out = func728();
 	//bool out = func796();
 	//std::vector<int> out = func806();
-	
-	func783();
-	
+	//func783();
+
+	int out = func713();
+	std::cout << out << std::endl;
 
 	//std::cout << out.at(1) << std::endl;
 	system("pause");
